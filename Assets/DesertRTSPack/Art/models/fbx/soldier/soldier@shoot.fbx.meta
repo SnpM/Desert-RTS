@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: e0d3feca7694a1645b5d0a4a75dae0ee
+timeCreated: 1493661137
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: bindroot
+    100006: chest
+    100008: clavical_l
+    100010: clavical_r
+    100012: elbow_l
+    100014: elbow_r
+    100016: fingers_l_a
+    100018: fingers_l_b
+    100020: fingers_r_a
+    100022: fingers_r_b
+    100024: foot_l
+    100026: foot_r
+    100028: hand_l
+    100030: hand_r
+    100032: hip_l
+    100034: hip_r
+    100036: knee_l
+    100038: knee_r
+    100040: neck
+    100042: pelvice
+    100044: root
+    100046: shoulder_l
+    100048: shoulder_r
+    100050: //RootNode
+    100052: spine
+    100054: thumb_l
+    100056: thumb_r
+    100058: weapon
+    100060: weapon_end
+    400000: ball_l
+    400002: ball_r
+    400004: bindroot
+    400006: chest
+    400008: clavical_l
+    400010: clavical_r
+    400012: elbow_l
+    400014: elbow_r
+    400016: fingers_l_a
+    400018: fingers_l_b
+    400020: fingers_r_a
+    400022: fingers_r_b
+    400024: foot_l
+    400026: foot_r
+    400028: hand_l
+    400030: hand_r
+    400032: hip_l
+    400034: hip_r
+    400036: knee_l
+    400038: knee_r
+    400040: neck
+    400042: pelvice
+    400044: root
+    400046: shoulder_l
+    400048: shoulder_r
+    400050: //RootNode
+    400052: spine
+    400054: thumb_l
+    400056: thumb_r
+    400058: weapon
+    400060: weapon_end
+    7400000: shoot
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: shoot
+      takeName: Take 001
+      firstFrame: 21
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/bindroot
+        weight: 1
+      - path: root/bindroot/pelvice
+        weight: 1
+      - path: root/bindroot/pelvice/hip_l
+        weight: 1
+      - path: root/bindroot/pelvice/hip_l/knee_l
+        weight: 1
+      - path: root/bindroot/pelvice/hip_l/knee_l/foot_l
+        weight: 1
+      - path: root/bindroot/pelvice/hip_l/knee_l/foot_l/ball_l
+        weight: 1
+      - path: root/bindroot/pelvice/hip_r
+        weight: 1
+      - path: root/bindroot/pelvice/hip_r/knee_r
+        weight: 1
+      - path: root/bindroot/pelvice/hip_r/knee_r/foot_r
+        weight: 1
+      - path: root/bindroot/pelvice/hip_r/knee_r/foot_r/ball_r
+        weight: 1
+      - path: root/bindroot/spine
+        weight: 1
+      - path: root/bindroot/spine/chest
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l/elbow_l
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l/elbow_l/hand_l
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l/elbow_l/hand_l/fingers_l_a
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l/elbow_l/hand_l/fingers_l_a/fingers_l_b
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_l/shoulder_l/elbow_l/hand_l/thumb_l
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r/elbow_r
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r/elbow_r/hand_r
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r/elbow_r/hand_r/fingers_r_a
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r/elbow_r/hand_r/fingers_r_a/fingers_r_b
+        weight: 1
+      - path: root/bindroot/spine/chest/clavical_r/shoulder_r/elbow_r/hand_r/thumb_r
+        weight: 1
+      - path: root/bindroot/spine/chest/neck
+        weight: 1
+      - path: weapon
+        weight: 1
+      - path: weapon/weapon_end
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
