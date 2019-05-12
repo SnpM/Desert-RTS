@@ -1,489 +1,621 @@
 fileFormatVersion: 2
 guid: 449b48f7eb5d87a4baaa5fb73f875a59
 ModelImporter:
-  fileIDToRecycleName:
-    4300000: construction_worker
-    4300002: wrench
-    7400000: Take 001 //// ConstructorDummy
-    7400002: idle //// ConstructorDummy
-    7400004: run //// ConstructorDummy
-    7400006: idle0 //// ConstructorDummy
-    7400008: walk //// ConstructorDummy
-    7400010: jump_pose //// ConstructorDummy
-    7400012: idle //// Constructor
-    7400014: run //// Constructor
-    7400016: walk //// Constructor
-    7400018: jump_pose //// Constructor
-    100100000: DataTemplate __Singleton__
-  serializedVersion: 10
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      4: 400052
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      1: 100052
+    second: //RootNode
+  - first:
+      4: 400140
+    second: Bip001
+  - first:
+      1: 100140
+    second: Bip001
+  - first:
+      4: 400124
+    second: Bip001 Head
+  - first:
+      1: 100124
+    second: Bip001 Head
+  - first:
+      4: 400116
+    second: Bip001 L Calf
+  - first:
+      1: 100116
+    second: Bip001 L Calf
+  - first:
+      4: 400100
+    second: Bip001 L Clavicle
+  - first:
+      1: 100100
+    second: Bip001 L Clavicle
+  - first:
+      4: 400092
+    second: Bip001 L Finger0
+  - first:
+      1: 100092
+    second: Bip001 L Finger0
+  - first:
+      4: 400094
+    second: Bip001 L Finger01
+  - first:
+      1: 100094
+    second: Bip001 L Finger01
+  - first:
+      4: 400076
+    second: Bip001 L Finger02
+  - first:
+      1: 100076
+    second: Bip001 L Finger02
+  - first:
+      4: 400080
+    second: Bip001 L Finger1
+  - first:
+      1: 100080
+    second: Bip001 L Finger1
+  - first:
+      4: 400082
+    second: Bip001 L Finger11
+  - first:
+      1: 100082
+    second: Bip001 L Finger11
+  - first:
+      4: 400084
+    second: Bip001 L Finger12
+  - first:
+      1: 100084
+    second: Bip001 L Finger12
+  - first:
+      4: 400088
+    second: Bip001 L Finger2
+  - first:
+      1: 100088
+    second: Bip001 L Finger2
+  - first:
+      4: 400090
+    second: Bip001 L Finger21
+  - first:
+      1: 100090
+    second: Bip001 L Finger21
+  - first:
+      4: 400074
+    second: Bip001 L Finger22
+  - first:
+      1: 100074
+    second: Bip001 L Finger22
+  - first:
+      4: 400058
+    second: Bip001 L Finger3
+  - first:
+      1: 100058
+    second: Bip001 L Finger3
+  - first:
+      4: 400060
+    second: Bip001 L Finger31
+  - first:
+      1: 100060
+    second: Bip001 L Finger31
+  - first:
+      4: 400062
+    second: Bip001 L Finger32
+  - first:
+      1: 100062
+    second: Bip001 L Finger32
+  - first:
+      4: 400066
+    second: Bip001 L Finger4
+  - first:
+      1: 100066
+    second: Bip001 L Finger4
+  - first:
+      4: 400068
+    second: Bip001 L Finger41
+  - first:
+      1: 100068
+    second: Bip001 L Finger41
+  - first:
+      4: 400070
+    second: Bip001 L Finger42
+  - first:
+      1: 100070
+    second: Bip001 L Finger42
+  - first:
+      4: 400114
+    second: Bip001 L Foot
+  - first:
+      1: 100114
+    second: Bip001 L Foot
+  - first:
+      4: 400096
+    second: Bip001 L Forearm
+  - first:
+      1: 100096
+    second: Bip001 L Forearm
+  - first:
+      4: 400130
+    second: Bip001 L Hand
+  - first:
+      1: 100130
+    second: Bip001 L Hand
+  - first:
+      4: 400118
+    second: Bip001 L Thigh
+  - first:
+      1: 100118
+    second: Bip001 L Thigh
+  - first:
+      4: 400112
+    second: Bip001 L Toe0
+  - first:
+      1: 100112
+    second: Bip001 L Toe0
+  - first:
+      4: 400098
+    second: Bip001 L UpperArm
+  - first:
+      1: 100098
+    second: Bip001 L UpperArm
+  - first:
+      4: 400132
+    second: Bip001 Neck
+  - first:
+      1: 100132
+    second: Bip001 Neck
+  - first:
+      4: 400138
+    second: Bip001 Pelvis
+  - first:
+      137: 13700000
+    second: Bip001 Pelvis
+  - first:
+      1: 100138
+    second: Bip001 Pelvis
+  - first:
+      4: 400108
+    second: Bip001 R Calf
+  - first:
+      1: 100108
+    second: Bip001 R Calf
+  - first:
+      4: 400054
+    second: Bip001 R Clavicle
+  - first:
+      1: 100054
+    second: Bip001 R Clavicle
+  - first:
+      4: 400044
+    second: Bip001 R Finger0
+  - first:
+      1: 100044
+    second: Bip001 R Finger0
+  - first:
+      4: 400046
+    second: Bip001 R Finger01
+  - first:
+      1: 100046
+    second: Bip001 R Finger01
+  - first:
+      4: 400006
+    second: Bip001 R Finger02
+  - first:
+      1: 100006
+    second: Bip001 R Finger02
+  - first:
+      4: 400000
+    second: Bip001 R Finger1
+  - first:
+      1: 100000
+    second: Bip001 R Finger1
+  - first:
+      4: 400004
+    second: Bip001 R Finger11
+  - first:
+      1: 100004
+    second: Bip001 R Finger11
+  - first:
+      4: 400010
+    second: Bip001 R Finger12
+  - first:
+      1: 100010
+    second: Bip001 R Finger12
+  - first:
+      4: 400034
+    second: Bip001 R Finger2
+  - first:
+      1: 100034
+    second: Bip001 R Finger2
+  - first:
+      4: 400002
+    second: Bip001 R Finger21
+  - first:
+      1: 100002
+    second: Bip001 R Finger21
+  - first:
+      4: 400036
+    second: Bip001 R Finger22
+  - first:
+      1: 100036
+    second: Bip001 R Finger22
+  - first:
+      4: 400022
+    second: Bip001 R Finger3
+  - first:
+      1: 100022
+    second: Bip001 R Finger3
+  - first:
+      4: 400020
+    second: Bip001 R Finger31
+  - first:
+      1: 100020
+    second: Bip001 R Finger31
+  - first:
+      4: 400018
+    second: Bip001 R Finger32
+  - first:
+      1: 100018
+    second: Bip001 R Finger32
+  - first:
+      4: 400014
+    second: Bip001 R Finger4
+  - first:
+      1: 100014
+    second: Bip001 R Finger4
+  - first:
+      4: 400012
+    second: Bip001 R Finger41
+  - first:
+      1: 100012
+    second: Bip001 R Finger41
+  - first:
+      4: 400028
+    second: Bip001 R Finger42
+  - first:
+      1: 100028
+    second: Bip001 R Finger42
+  - first:
+      4: 400106
+    second: Bip001 R Foot
+  - first:
+      1: 100106
+    second: Bip001 R Foot
+  - first:
+      4: 400042
+    second: Bip001 R Forearm
+  - first:
+      1: 100042
+    second: Bip001 R Forearm
+  - first:
+      4: 400128
+    second: Bip001 R Hand
+  - first:
+      1: 100128
+    second: Bip001 R Hand
+  - first:
+      4: 400110
+    second: Bip001 R Thigh
+  - first:
+      1: 100110
+    second: Bip001 R Thigh
+  - first:
+      4: 400104
+    second: Bip001 R Toe0
+  - first:
+      1: 100104
+    second: Bip001 R Toe0
+  - first:
+      4: 400040
+    second: Bip001 R UpperArm
+  - first:
+      1: 100040
+    second: Bip001 R UpperArm
+  - first:
+      4: 400136
+    second: Bip001 Spine
+  - first:
+      1: 100136
+    second: Bip001 Spine
+  - first:
+      4: 400134
+    second: Bip001 Spine1
+  - first:
+      1: 100134
+    second: Bip001 Spine1
+  - first:
+      4: 400102
+    second: construction_worker
+  - first:
+      1: 100102
+    second: construction_worker
+  - first:
+      4: 400120
+    second: helmet_bone
+  - first:
+      1: 100120
+    second: helmet_bone
+  - first:
+      4: 400032
+    second: hip_adjustment_bone_left
+  - first:
+      1: 100032
+    second: hip_adjustment_bone_left
+  - first:
+      4: 400026
+    second: hip_adjustment_bone_right
+  - first:
+      1: 100026
+    second: hip_adjustment_bone_right
+  - first:
+      4: 400126
+    second: wrench
+  - first:
+      33: 3300000
+    second: wrench
+  - first:
+      23: 2300000
+    second: wrench
+  - first:
+      1: 100126
+    second: wrench
+  - first:
+      43: 4300000
+    second: construction_worker
+  - first:
+      43: 4300002
+    second: wrench
+  - first:
+      74: 7400000
+    second: Take 001 //// ConstructorDummy
+  - first:
+      74: 7400002
+    second: idle //// ConstructorDummy
+  - first:
+      74: 7400004
+    second: run //// ConstructorDummy
+  - first:
+      74: 7400006
+    second: idle0 //// ConstructorDummy
+  - first:
+      74: 7400008
+    second: walk //// ConstructorDummy
+  - first:
+      74: 7400010
+    second: jump_pose //// ConstructorDummy
+  - first:
+      74: 7400012
+    second: idle //// Constructor
+  - first:
+      74: 7400014
+    second: run //// Constructor
+  - first:
+      74: 7400016
+    second: walk //// Constructor
+  - first:
+      74: 7400018
+    second: jump_pose //// Constructor
+  - first:
+      1001: 100100000
+    second: DataTemplate __Singleton__
+  - first:
+      74: -5252816984213320552
+    second: idle
+  - first:
+      74: 6200578666267062213
+    second: run
+  - first:
+      74: -3419257869308726280
+    second: walk
+  - first:
+      74: -8788289089574540515
+    second: jump_pose
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 3
     materialSearch: 1
+    materialLocation: 0
   animations:
-    generateAnimations: 3
+    legacyGenerateAnimations: 3
     bakeSimulation: 0
-    splitAnimations: 1
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
-    - name: idle
+    - serializedVersion: 16
+      name: idle
+      takeName: 
+      internalID: -5252816984213320552
       firstFrame: 2
       lastFrame: 62
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: run
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: 
+      internalID: 6200578666267062213
       firstFrame: 65
       lastFrame: 81
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: walk
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: 
+      internalID: -3419257869308726280
       firstFrame: 84
       lastFrame: 116
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: jump_pose
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump_pose
+      takeName: 
+      internalID: -8788289089574540515
       firstFrame: 118
       lastFrame: 123
       wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMesh: 0
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
-  textMetaNamesToFileIDs:
-    //RootNode:
-      data:
-        first: 1
-        second: d4860100
-      data:
-        first: 4
-        second: b41a0600
-      data:
-        first: 111
-        second: 605fa900
-    Bip001:
-      data:
-        first: 1
-        second: 2c870100
-      data:
-        first: 4
-        second: 0c1b0600
-    Bip001 Head:
-      data:
-        first: 1
-        second: 1c870100
-      data:
-        first: 4
-        second: fc1a0600
-    Bip001 L Calf:
-      data:
-        first: 1
-        second: 14870100
-      data:
-        first: 4
-        second: f41a0600
-    Bip001 L Clavicle:
-      data:
-        first: 1
-        second: 04870100
-      data:
-        first: 4
-        second: e41a0600
-    Bip001 L Finger0:
-      data:
-        first: 1
-        second: fc860100
-      data:
-        first: 4
-        second: dc1a0600
-    Bip001 L Finger01:
-      data:
-        first: 1
-        second: fe860100
-      data:
-        first: 4
-        second: de1a0600
-    Bip001 L Finger02:
-      data:
-        first: 1
-        second: ec860100
-      data:
-        first: 4
-        second: cc1a0600
-    Bip001 L Finger1:
-      data:
-        first: 1
-        second: f0860100
-      data:
-        first: 4
-        second: d01a0600
-    Bip001 L Finger11:
-      data:
-        first: 1
-        second: f2860100
-      data:
-        first: 4
-        second: d21a0600
-    Bip001 L Finger12:
-      data:
-        first: 1
-        second: f4860100
-      data:
-        first: 4
-        second: d41a0600
-    Bip001 L Finger2:
-      data:
-        first: 1
-        second: f8860100
-      data:
-        first: 4
-        second: d81a0600
-    Bip001 L Finger21:
-      data:
-        first: 1
-        second: fa860100
-      data:
-        first: 4
-        second: da1a0600
-    Bip001 L Finger22:
-      data:
-        first: 1
-        second: ea860100
-      data:
-        first: 4
-        second: ca1a0600
-    Bip001 L Finger3:
-      data:
-        first: 1
-        second: da860100
-      data:
-        first: 4
-        second: ba1a0600
-    Bip001 L Finger31:
-      data:
-        first: 1
-        second: dc860100
-      data:
-        first: 4
-        second: bc1a0600
-    Bip001 L Finger32:
-      data:
-        first: 1
-        second: de860100
-      data:
-        first: 4
-        second: be1a0600
-    Bip001 L Finger4:
-      data:
-        first: 1
-        second: e2860100
-      data:
-        first: 4
-        second: c21a0600
-    Bip001 L Finger41:
-      data:
-        first: 1
-        second: e4860100
-      data:
-        first: 4
-        second: c41a0600
-    Bip001 L Finger42:
-      data:
-        first: 1
-        second: e6860100
-      data:
-        first: 4
-        second: c61a0600
-    Bip001 L Foot:
-      data:
-        first: 1
-        second: 12870100
-      data:
-        first: 4
-        second: f21a0600
-    Bip001 L Forearm:
-      data:
-        first: 1
-        second: 00870100
-      data:
-        first: 4
-        second: e01a0600
-    Bip001 L Hand:
-      data:
-        first: 1
-        second: 22870100
-      data:
-        first: 4
-        second: 021b0600
-    Bip001 L Thigh:
-      data:
-        first: 1
-        second: 16870100
-      data:
-        first: 4
-        second: f61a0600
-    Bip001 L Toe0:
-      data:
-        first: 1
-        second: 10870100
-      data:
-        first: 4
-        second: f01a0600
-    Bip001 L UpperArm:
-      data:
-        first: 1
-        second: 02870100
-      data:
-        first: 4
-        second: e21a0600
-    Bip001 Neck:
-      data:
-        first: 1
-        second: 24870100
-      data:
-        first: 4
-        second: 041b0600
-    Bip001 Pelvis:
-      data:
-        first: 1
-        second: 2a870100
-      data:
-        first: 4
-        second: 0a1b0600
-      data:
-        first: 137
-        second: a00bd100
-    Bip001 R Calf:
-      data:
-        first: 1
-        second: 0c870100
-      data:
-        first: 4
-        second: ec1a0600
-    Bip001 R Clavicle:
-      data:
-        first: 1
-        second: d6860100
-      data:
-        first: 4
-        second: b61a0600
-    Bip001 R Finger0:
-      data:
-        first: 1
-        second: cc860100
-      data:
-        first: 4
-        second: ac1a0600
-    Bip001 R Finger01:
-      data:
-        first: 1
-        second: ce860100
-      data:
-        first: 4
-        second: ae1a0600
-    Bip001 R Finger02:
-      data:
-        first: 1
-        second: a6860100
-      data:
-        first: 4
-        second: 861a0600
-    Bip001 R Finger1:
-      data:
-        first: 1
-        second: a0860100
-      data:
-        first: 4
-        second: 801a0600
-    Bip001 R Finger11:
-      data:
-        first: 1
-        second: a4860100
-      data:
-        first: 4
-        second: 841a0600
-    Bip001 R Finger12:
-      data:
-        first: 1
-        second: aa860100
-      data:
-        first: 4
-        second: 8a1a0600
-    Bip001 R Finger2:
-      data:
-        first: 1
-        second: c2860100
-      data:
-        first: 4
-        second: a21a0600
-    Bip001 R Finger21:
-      data:
-        first: 1
-        second: a2860100
-      data:
-        first: 4
-        second: 821a0600
-    Bip001 R Finger22:
-      data:
-        first: 1
-        second: c4860100
-      data:
-        first: 4
-        second: a41a0600
-    Bip001 R Finger3:
-      data:
-        first: 1
-        second: b6860100
-      data:
-        first: 4
-        second: 961a0600
-    Bip001 R Finger31:
-      data:
-        first: 1
-        second: b4860100
-      data:
-        first: 4
-        second: 941a0600
-    Bip001 R Finger32:
-      data:
-        first: 1
-        second: b2860100
-      data:
-        first: 4
-        second: 921a0600
-    Bip001 R Finger4:
-      data:
-        first: 1
-        second: ae860100
-      data:
-        first: 4
-        second: 8e1a0600
-    Bip001 R Finger41:
-      data:
-        first: 1
-        second: ac860100
-      data:
-        first: 4
-        second: 8c1a0600
-    Bip001 R Finger42:
-      data:
-        first: 1
-        second: bc860100
-      data:
-        first: 4
-        second: 9c1a0600
-    Bip001 R Foot:
-      data:
-        first: 1
-        second: 0a870100
-      data:
-        first: 4
-        second: ea1a0600
-    Bip001 R Forearm:
-      data:
-        first: 1
-        second: ca860100
-      data:
-        first: 4
-        second: aa1a0600
-    Bip001 R Hand:
-      data:
-        first: 1
-        second: 20870100
-      data:
-        first: 4
-        second: 001b0600
-    Bip001 R Thigh:
-      data:
-        first: 1
-        second: 0e870100
-      data:
-        first: 4
-        second: ee1a0600
-    Bip001 R Toe0:
-      data:
-        first: 1
-        second: 08870100
-      data:
-        first: 4
-        second: e81a0600
-    Bip001 R UpperArm:
-      data:
-        first: 1
-        second: c8860100
-      data:
-        first: 4
-        second: a81a0600
-    Bip001 Spine:
-      data:
-        first: 1
-        second: 28870100
-      data:
-        first: 4
-        second: 081b0600
-    Bip001 Spine1:
-      data:
-        first: 1
-        second: 26870100
-      data:
-        first: 4
-        second: 061b0600
-    construction_worker:
-      data:
-        first: 1
-        second: 06870100
-      data:
-        first: 4
-        second: e61a0600
-    helmet_bone:
-      data:
-        first: 1
-        second: 18870100
-      data:
-        first: 4
-        second: f81a0600
-    hip_adjustment_bone_left:
-      data:
-        first: 1
-        second: c0860100
-      data:
-        first: 4
-        second: a01a0600
-    hip_adjustment_bone_right:
-      data:
-        first: 1
-        second: ba860100
-      data:
-        first: 4
-        second: 9a1a0600
-    wrench:
-      data:
-        first: 1
-        second: 1e870100
-      data:
-        first: 4
-        second: fe1a0600
-      data:
-        first: 23
-        second: 60182300
-      data:
-        first: 33
-        second: a05a3200
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

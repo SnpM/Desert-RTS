@@ -1,573 +1,814 @@
 fileFormatVersion: 2
 guid: 492cc7eb84514c64da25775df488c9e6
 ModelImporter:
-  fileIDToRecycleName:
-    4300000: L_OOG
-    4300002: R_oog
-    4300004: muktar_2
-    4300006: boventanden
-    4300008: ondertanden
-    7400000: C4D Animation Take //// muktargame
-    7400002: idle //// muktargame
-    7400004: walk //// muktargame
-    7400006: run //// muktargame
-    7400008: jump //// muktargame
-    7400010: attack //// muktargame
-    7400012: fall //// muktargame
-    7400014: die //// muktargame
-    7400016: gothit //// muktargame
-    100100000: DataTemplate __Singleton__
-  serializedVersion: 10
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      4: 400128
+    second: L_FOOT
+  - first:
+      1: 100128
+    second: L_FOOT
+  - first:
+      4: 400020
+    second: L_OOG
+  - first:
+      137: 13700008
+    second: L_OOG
+  - first:
+      1: 100020
+    second: L_OOG
+  - first:
+      4: 400090
+    second: L_ankle
+  - first:
+      1: 100090
+    second: L_ankle
+  - first:
+      4: 400122
+    second: L_ankle_kontrol
+  - first:
+      1: 100122
+    second: L_ankle_kontrol
+  - first:
+      4: 400072
+    second: L_arm
+  - first:
+      1: 100072
+    second: L_arm
+  - first:
+      4: 400070
+    second: L_elbow
+  - first:
+      1: 100070
+    second: L_elbow
+  - first:
+      4: 400032
+    second: L_eye
+  - first:
+      1: 100032
+    second: L_eye
+  - first:
+      4: 400060
+    second: L_finger1
+  - first:
+      1: 100060
+    second: L_finger1
+  - first:
+      4: 400058
+    second: L_finger2
+  - first:
+      1: 100058
+    second: L_finger2
+  - first:
+      4: 400056
+    second: L_fingertip
+  - first:
+      1: 100056
+    second: L_fingertip
+  - first:
+      4: 400088
+    second: L_foot
+  - first:
+      1: 100088
+    second: L_foot
+  - first:
+      4: 400124
+    second: L_footkontrol
+  - first:
+      1: 100124
+    second: L_footkontrol
+  - first:
+      4: 400092
+    second: L_knee
+  - first:
+      1: 100092
+    second: L_knee
+  - first:
+      4: 400094
+    second: L_leg
+  - first:
+      1: 100094
+    second: L_leg
+  - first:
+      4: 400112
+    second: L_leg_Pole
+  - first:
+      1: 100112
+    second: L_leg_Pole
+  - first:
+      4: 400066
+    second: L_thumb1
+  - first:
+      1: 100066
+    second: L_thumb1
+  - first:
+      4: 400064
+    second: L_thumb2
+  - first:
+      1: 100064
+    second: L_thumb2
+  - first:
+      4: 400062
+    second: L_thumbtip
+  - first:
+      1: 100062
+    second: L_thumbtip
+  - first:
+      4: 400086
+    second: L_toes
+  - first:
+      1: 100086
+    second: L_toes
+  - first:
+      4: 400126
+    second: L_toeskontrol
+  - first:
+      1: 100126
+    second: L_toeskontrol
+  - first:
+      4: 400068
+    second: L_wrist
+  - first:
+      1: 100068
+    second: L_wrist
+  - first:
+      4: 400108
+    second: L_wristkontrol
+  - first:
+      1: 100108
+    second: L_wristkontrol
+  - first:
+      4: 400018
+    second: Null
+  - first:
+      1: 100018
+    second: Null
+  - first:
+      4: 400014
+    second: Null_2
+  - first:
+      1: 100014
+    second: Null_2
+  - first:
+      4: 400010
+    second: Null_3
+  - first:
+      1: 100010
+    second: Null_3
+  - first:
+      4: 400006
+    second: Null_4
+  - first:
+      1: 100006
+    second: Null_4
+  - first:
+      4: 400000
+    second: Null_5
+  - first:
+      1: 100000
+    second: Null_5
+  - first:
+      4: 400120
+    second: R_FOOT
+  - first:
+      1: 100120
+    second: R_FOOT
+  - first:
+      4: 400080
+    second: R_ankle
+  - first:
+      1: 100080
+    second: R_ankle
+  - first:
+      4: 400114
+    second: R_ankle_kontrol
+  - first:
+      1: 100114
+    second: R_ankle_kontrol
+  - first:
+      4: 400054
+    second: R_arm
+  - first:
+      1: 100054
+    second: R_arm
+  - first:
+      4: 400052
+    second: R_elbow
+  - first:
+      1: 100052
+    second: R_elbow
+  - first:
+      4: 400030
+    second: R_eye
+  - first:
+      1: 100030
+    second: R_eye
+  - first:
+      4: 400042
+    second: R_finger1
+  - first:
+      1: 100042
+    second: R_finger1
+  - first:
+      4: 400040
+    second: R_finger2
+  - first:
+      1: 100040
+    second: R_finger2
+  - first:
+      4: 400038
+    second: R_fingertip
+  - first:
+      1: 100038
+    second: R_fingertip
+  - first:
+      4: 400078
+    second: R_foot
+  - first:
+      1: 100078
+    second: R_foot
+  - first:
+      4: 400116
+    second: R_footkontrol
+  - first:
+      1: 100116
+    second: R_footkontrol
+  - first:
+      4: 400082
+    second: R_knee
+  - first:
+      1: 100082
+    second: R_knee
+  - first:
+      4: 400084
+    second: R_leg
+  - first:
+      1: 100084
+    second: R_leg
+  - first:
+      4: 400110
+    second: R_leg_Pole
+  - first:
+      1: 100110
+    second: R_leg_Pole
+  - first:
+      4: 400016
+    second: R_oog
+  - first:
+      137: 13700006
+    second: R_oog
+  - first:
+      1: 100016
+    second: R_oog
+  - first:
+      4: 400048
+    second: R_thumb1
+  - first:
+      1: 100048
+    second: R_thumb1
+  - first:
+      4: 400046
+    second: R_thumb2
+  - first:
+      1: 100046
+    second: R_thumb2
+  - first:
+      4: 400044
+    second: R_thumbtip
+  - first:
+      1: 100044
+    second: R_thumbtip
+  - first:
+      4: 400076
+    second: R_toes
+  - first:
+      1: 100076
+    second: R_toes
+  - first:
+      4: 400118
+    second: R_toeskontrol
+  - first:
+      1: 100118
+    second: R_toeskontrol
+  - first:
+      4: 400050
+    second: R_wrist
+  - first:
+      1: 100050
+    second: R_wrist
+  - first:
+      4: 400106
+    second: R_wristkontrol
+  - first:
+      1: 100106
+    second: R_wristkontrol
+  - first:
+      4: 400074
+    second: belly
+  - first:
+      1: 100074
+    second: belly
+  - first:
+      4: 400102
+    second: bellykontrol
+  - first:
+      1: 100102
+    second: bellykontrol
+  - first:
+      4: 400008
+    second: boventanden
+  - first:
+      137: 13700002
+    second: boventanden
+  - first:
+      1: 100008
+    second: boventanden
+  - first:
+      4: 400034
+    second: head
+  - first:
+      1: 100034
+    second: head
+  - first:
+      4: 400096
+    second: hip
+  - first:
+      1: 100096
+    second: hip
+  - first:
+      4: 400100
+    second: hipkontrol
+  - first:
+      1: 100100
+    second: hipkontrol
+  - first:
+      4: 400028
+    second: jaw
+  - first:
+      1: 100028
+    second: jaw
+  - first:
+      4: 400026
+    second: lip
+  - first:
+      1: 100026
+    second: lip
+  - first:
+      4: 400022
+    second: muktar
+  - first:
+      1: 100022
+    second: muktar
+  - first:
+      4: 400012
+    second: muktar_2
+  - first:
+      137: 13700004
+    second: muktar_2
+  - first:
+      1: 100012
+    second: muktar_2
+  - first:
+      4: 400130
+    second: n_Side
+  - first:
+      1: 100130
+    second: n_Side
+  - first:
+      4: 400004
+    second: ondertanden
+  - first:
+      137: 13700000
+    second: ondertanden
+  - first:
+      1: 100004
+    second: ondertanden
+  - first:
+      4: 400036
+    second: shoulder
+  - first:
+      1: 100036
+    second: shoulder
+  - first:
+      4: 400104
+    second: shoulderkontrol
+  - first:
+      1: 100104
+    second: shoulderkontrol
+  - first:
+      4: 400098
+    second: spine
+  - first:
+      1: 100098
+    second: spine
+  - first:
+      4: 400024
+    second: top
+  - first:
+      1: 100024
+    second: top
+  - first:
+      43: 4300000
+    second: L_OOG
+  - first:
+      43: 4300002
+    second: R_oog
+  - first:
+      43: 4300004
+    second: muktar_2
+  - first:
+      43: 4300006
+    second: boventanden
+  - first:
+      43: 4300008
+    second: ondertanden
+  - first:
+      74: 7400000
+    second: C4D Animation Take //// muktargame
+  - first:
+      74: 7400002
+    second: idle //// muktargame
+  - first:
+      74: 7400004
+    second: walk //// muktargame
+  - first:
+      74: 7400006
+    second: run //// muktargame
+  - first:
+      74: 7400008
+    second: jump //// muktargame
+  - first:
+      74: 7400010
+    second: attack //// muktargame
+  - first:
+      74: 7400012
+    second: fall //// muktargame
+  - first:
+      74: 7400014
+    second: die //// muktargame
+  - first:
+      74: 7400016
+    second: gothit //// muktargame
+  - first:
+      1001: 100100000
+    second: DataTemplate __Singleton__
+  - first:
+      74: -5252816984213320552
+    second: idle
+  - first:
+      74: -3419257869308726280
+    second: walk
+  - first:
+      74: 6200578666267062213
+    second: run
+  - first:
+      74: -2993534804863918692
+    second: jump
+  - first:
+      74: -6239216113759591374
+    second: attack
+  - first:
+      74: -1504929105726005784
+    second: fall
+  - first:
+      74: -5455075036266976943
+    second: die
+  - first:
+      74: -8074945274031733764
+    second: gothit
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 7de122b788971734d91036434995bdb4, type: 2}
   materials:
     importMaterials: 1
     materialName: 3
     materialSearch: 1
+    materialLocation: 0
   animations:
-    generateAnimations: 3
+    legacyGenerateAnimations: 3
     bakeSimulation: 0
-    splitAnimations: 1
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
-    - name: idle
+    - serializedVersion: 16
+      name: idle
+      takeName: 
+      internalID: -5252816984213320552
       firstFrame: 0
       lastFrame: 89
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: walk
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk
+      takeName: 
+      internalID: -3419257869308726280
       firstFrame: 91
       lastFrame: 150
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: run
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: 
+      internalID: 6200578666267062213
       firstFrame: 152
       lastFrame: 181
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: jump
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump
+      takeName: 
+      internalID: -2993534804863918692
       firstFrame: 183
       lastFrame: 210
       wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: attack
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack
+      takeName: 
+      internalID: -6239216113759591374
       firstFrame: 214
       lastFrame: 249
       wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: fall
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fall
+      takeName: 
+      internalID: -1504929105726005784
       firstFrame: 251
       lastFrame: 269
       wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: die
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die
+      takeName: 
+      internalID: -5455075036266976943
       firstFrame: 271
       lastFrame: 288
       wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
-    - name: gothit
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: gothit
+      takeName: 
+      internalID: -8074945274031733764
       firstFrame: 290
       lastFrame: 305
       wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMesh: 0
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
-  textMetaNamesToFileIDs:
-    //RootNode:
-      data:
-        first: 1
-        second: a2860100
-      data:
-        first: 4
-        second: 821a0600
-      data:
-        first: 111
-        second: 605fa900
-    L_FOOT:
-      data:
-        first: 1
-        second: 20870100
-      data:
-        first: 4
-        second: 001b0600
-    L_OOG:
-      data:
-        first: 1
-        second: b4860100
-      data:
-        first: 4
-        second: 941a0600
-      data:
-        first: 137
-        second: a80bd100
-    L_ankle:
-      data:
-        first: 1
-        second: fa860100
-      data:
-        first: 4
-        second: da1a0600
-    L_ankle_kontrol:
-      data:
-        first: 1
-        second: 1a870100
-      data:
-        first: 4
-        second: fa1a0600
-    L_arm:
-      data:
-        first: 1
-        second: e8860100
-      data:
-        first: 4
-        second: c81a0600
-    L_elbow:
-      data:
-        first: 1
-        second: e6860100
-      data:
-        first: 4
-        second: c61a0600
-    L_eye:
-      data:
-        first: 1
-        second: c0860100
-      data:
-        first: 4
-        second: a01a0600
-    L_finger1:
-      data:
-        first: 1
-        second: dc860100
-      data:
-        first: 4
-        second: bc1a0600
-    L_finger2:
-      data:
-        first: 1
-        second: da860100
-      data:
-        first: 4
-        second: ba1a0600
-    L_fingertip:
-      data:
-        first: 1
-        second: d8860100
-      data:
-        first: 4
-        second: b81a0600
-    L_foot:
-      data:
-        first: 1
-        second: f8860100
-      data:
-        first: 4
-        second: d81a0600
-    L_footkontrol:
-      data:
-        first: 1
-        second: 1c870100
-      data:
-        first: 4
-        second: fc1a0600
-    L_knee:
-      data:
-        first: 1
-        second: fc860100
-      data:
-        first: 4
-        second: dc1a0600
-    L_leg:
-      data:
-        first: 1
-        second: fe860100
-      data:
-        first: 4
-        second: de1a0600
-    L_leg_Pole:
-      data:
-        first: 1
-        second: 10870100
-      data:
-        first: 4
-        second: f01a0600
-    L_thumb1:
-      data:
-        first: 1
-        second: e2860100
-      data:
-        first: 4
-        second: c21a0600
-    L_thumb2:
-      data:
-        first: 1
-        second: e0860100
-      data:
-        first: 4
-        second: c01a0600
-    L_thumbtip:
-      data:
-        first: 1
-        second: de860100
-      data:
-        first: 4
-        second: be1a0600
-    L_toes:
-      data:
-        first: 1
-        second: f6860100
-      data:
-        first: 4
-        second: d61a0600
-    L_toeskontrol:
-      data:
-        first: 1
-        second: 1e870100
-      data:
-        first: 4
-        second: fe1a0600
-    L_wrist:
-      data:
-        first: 1
-        second: e4860100
-      data:
-        first: 4
-        second: c41a0600
-    L_wristkontrol:
-      data:
-        first: 1
-        second: 0c870100
-      data:
-        first: 4
-        second: ec1a0600
-    Null:
-      data:
-        first: 1
-        second: b2860100
-      data:
-        first: 4
-        second: 921a0600
-    Null_2:
-      data:
-        first: 1
-        second: ae860100
-      data:
-        first: 4
-        second: 8e1a0600
-    Null_3:
-      data:
-        first: 1
-        second: aa860100
-      data:
-        first: 4
-        second: 8a1a0600
-    Null_4:
-      data:
-        first: 1
-        second: a6860100
-      data:
-        first: 4
-        second: 861a0600
-    Null_5:
-      data:
-        first: 1
-        second: a0860100
-      data:
-        first: 4
-        second: 801a0600
-    R_FOOT:
-      data:
-        first: 1
-        second: 18870100
-      data:
-        first: 4
-        second: f81a0600
-    R_ankle:
-      data:
-        first: 1
-        second: f0860100
-      data:
-        first: 4
-        second: d01a0600
-    R_ankle_kontrol:
-      data:
-        first: 1
-        second: 12870100
-      data:
-        first: 4
-        second: f21a0600
-    R_arm:
-      data:
-        first: 1
-        second: d6860100
-      data:
-        first: 4
-        second: b61a0600
-    R_elbow:
-      data:
-        first: 1
-        second: d4860100
-      data:
-        first: 4
-        second: b41a0600
-    R_eye:
-      data:
-        first: 1
-        second: be860100
-      data:
-        first: 4
-        second: 9e1a0600
-    R_finger1:
-      data:
-        first: 1
-        second: ca860100
-      data:
-        first: 4
-        second: aa1a0600
-    R_finger2:
-      data:
-        first: 1
-        second: c8860100
-      data:
-        first: 4
-        second: a81a0600
-    R_fingertip:
-      data:
-        first: 1
-        second: c6860100
-      data:
-        first: 4
-        second: a61a0600
-    R_foot:
-      data:
-        first: 1
-        second: ee860100
-      data:
-        first: 4
-        second: ce1a0600
-    R_footkontrol:
-      data:
-        first: 1
-        second: 14870100
-      data:
-        first: 4
-        second: f41a0600
-    R_knee:
-      data:
-        first: 1
-        second: f2860100
-      data:
-        first: 4
-        second: d21a0600
-    R_leg:
-      data:
-        first: 1
-        second: f4860100
-      data:
-        first: 4
-        second: d41a0600
-    R_leg_Pole:
-      data:
-        first: 1
-        second: 0e870100
-      data:
-        first: 4
-        second: ee1a0600
-    R_oog:
-      data:
-        first: 1
-        second: b0860100
-      data:
-        first: 4
-        second: 901a0600
-      data:
-        first: 137
-        second: a60bd100
-    R_thumb1:
-      data:
-        first: 1
-        second: d0860100
-      data:
-        first: 4
-        second: b01a0600
-    R_thumb2:
-      data:
-        first: 1
-        second: ce860100
-      data:
-        first: 4
-        second: ae1a0600
-    R_thumbtip:
-      data:
-        first: 1
-        second: cc860100
-      data:
-        first: 4
-        second: ac1a0600
-    R_toes:
-      data:
-        first: 1
-        second: ec860100
-      data:
-        first: 4
-        second: cc1a0600
-    R_toeskontrol:
-      data:
-        first: 1
-        second: 16870100
-      data:
-        first: 4
-        second: f61a0600
-    R_wrist:
-      data:
-        first: 1
-        second: d2860100
-      data:
-        first: 4
-        second: b21a0600
-    R_wristkontrol:
-      data:
-        first: 1
-        second: 0a870100
-      data:
-        first: 4
-        second: ea1a0600
-    belly:
-      data:
-        first: 1
-        second: ea860100
-      data:
-        first: 4
-        second: ca1a0600
-    bellykontrol:
-      data:
-        first: 1
-        second: 06870100
-      data:
-        first: 4
-        second: e61a0600
-    boventanden:
-      data:
-        first: 1
-        second: a8860100
-      data:
-        first: 4
-        second: 881a0600
-      data:
-        first: 137
-        second: a20bd100
-    head:
-      data:
-        first: 1
-        second: c2860100
-      data:
-        first: 4
-        second: a21a0600
-    hip:
-      data:
-        first: 1
-        second: 00870100
-      data:
-        first: 4
-        second: e01a0600
-    hipkontrol:
-      data:
-        first: 1
-        second: 04870100
-      data:
-        first: 4
-        second: e41a0600
-    jaw:
-      data:
-        first: 1
-        second: bc860100
-      data:
-        first: 4
-        second: 9c1a0600
-    lip:
-      data:
-        first: 1
-        second: ba860100
-      data:
-        first: 4
-        second: 9a1a0600
-    muktar:
-      data:
-        first: 1
-        second: b6860100
-      data:
-        first: 4
-        second: 961a0600
-    muktar_2:
-      data:
-        first: 1
-        second: ac860100
-      data:
-        first: 4
-        second: 8c1a0600
-      data:
-        first: 137
-        second: a40bd100
-    n_Side:
-      data:
-        first: 1
-        second: 22870100
-      data:
-        first: 4
-        second: 021b0600
-    ondertanden:
-      data:
-        first: 1
-        second: a4860100
-      data:
-        first: 4
-        second: 841a0600
-      data:
-        first: 137
-        second: a00bd100
-    shoulder:
-      data:
-        first: 1
-        second: c4860100
-      data:
-        first: 4
-        second: a41a0600
-    shoulderkontrol:
-      data:
-        first: 1
-        second: 08870100
-      data:
-        first: 4
-        second: e81a0600
-    spine:
-      data:
-        first: 1
-        second: 02870100
-      data:
-        first: 4
-        second: e21a0600
-    top:
-      data:
-        first: 1
-        second: b8860100
-      data:
-        first: 4
-        second: 981a0600
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
