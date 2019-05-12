@@ -106,7 +106,7 @@ public class GUICustomAuth : MonoBehaviour
 
                 GUILayout.Space(10);
 
-                GUILayout.Label("For this demo set the Authentication URL in the Dashboard to:\nhttp://photon.webscript.io/auth-demo-equals");
+                GUILayout.Label("For this demo set the Authentication URL in the Dashboard to:\nhttps://wt-e4c18d407aa73a40e4182aaf00a2a2eb-0.run.webtask.io/auth/auth-demo-equals");
                 GUILayout.Label("That authentication-service has no user-database. It confirms any user if 'name equals password'.");
                 GUILayout.Label("The error message comes from that service and can be customized.");
 
@@ -130,7 +130,7 @@ public class GUICustomAuth : MonoBehaviour
 
                 GUILayout.Label("The actual authentication must be done by a web-service which you host and customize. Example sourcecode for these services is available on the docs page.");
                 
-                GUILayout.Label("For this demo set the Authentication URL in the Dashboard to:\nhttp://photon.webscript.io/auth-demo-equals");
+                GUILayout.Label("For this demo set the Authentication URL in the Dashboard to:\nhttps://wt-e4c18d407aa73a40e4182aaf00a2a2eb-0.run.webtask.io/auth/auth-demo-equals");
                 GUILayout.Label("That authentication-service has no user-database. It confirms any user if 'name equals password'.");
 
                 GUILayout.Space(10);

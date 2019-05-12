@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 
 namespace ExitGames.Client.Photon
@@ -30,7 +31,7 @@ namespace ExitGames.Client.Photon
 	    static PhotonEditorUtils()
 	    {
             HasVoice = Type.GetType("ExitGames.Client.Photon.Voice.VoiceClient, Assembly-CSharp") != null || Type.GetType("ExitGames.Client.Photon.Voice.VoiceClient, Assembly-CSharp-firstpass") != null;
-            HasChat = Type.GetType("ExitGames.Client.Photon.Chat.ChatClient, Assembly-CSharp") != null || Type.GetType("ExitGames.Client.Photon.Chat.ChatClient, Assembly-CSharp-firstpass") != null;
+            HasChat = Type.GetType("Photon.Chat.ChatClient, Assembly-CSharp") != null || Type.GetType("Photon.Chat.ChatClient, Assembly-CSharp-firstpass") != null;
             PhotonEditorUtils.HasCheckedProducts = true;
 	    }
 
@@ -94,6 +95,20 @@ namespace ExitGames.Client.Photon
 			}
 			
 			return GetParent(dir.Parent.FullName, parentName);
+		}
+
+		/// <summary>
+		/// Check if a GameObject is a prefab asset or part of a prefab asset, as opposed to an instance in the scene hierarchy
+		/// </summary>
+		/// <returns><c>true</c>, if a prefab asset or part of it, <c>false</c> otherwise.</returns>
+		/// <param name="go">The GameObject to check</param>
+		public static bool IsPrefab(GameObject go)
+		{
+            #if UNITY_2018_3_OR_NEWER
+            	return UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetPrefabStage(go) != null || EditorUtility.IsPersistent(go);
+            #else
+                return EditorUtility.IsPersistent(go);
+			#endif
 		}
 	}
 }

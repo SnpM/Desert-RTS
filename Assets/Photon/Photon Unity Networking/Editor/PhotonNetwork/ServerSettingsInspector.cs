@@ -158,22 +158,25 @@ public class ServerSettingsInspector : Editor
                 ConnectionProtocol valProtocol = settings.Protocol;
                 valProtocol = (ConnectionProtocol) EditorGUILayout.EnumPopup("Protocol", valProtocol);
                 settings.Protocol = (ConnectionProtocol) valProtocol;
+
                 #if UNITY_WEBGL
-                EditorGUILayout.HelpBox("WebGL always use Secure WebSockets as protocol.\nThis setting gets ignored in current export.", MessageType.Warning);
+				if (valProtocol != ConnectionProtocol.WebSocket && valProtocol != ConnectionProtocol.WebSocketSecure)
+				{
+				EditorGUILayout.HelpBox("WebGL must use WebSockets as protocol. Please select WebSocket or WebSocket Secure Protocole.", MessageType.Warning);
+				}
                 #endif
                 break;
 
-            case ServerSettings.HostingOption.SelfHosted:
+		case ServerSettings.HostingOption.SelfHosted:
                 // address and port (depends on protocol below)
-                bool hidePort = false;
-                if (settings.Protocol == ConnectionProtocol.Udp && (settings.ServerPort == 4530 || settings.ServerPort == 0))
-                {
-                    settings.ServerPort = 5055;
-                }
-                else if (settings.Protocol == ConnectionProtocol.Tcp && (settings.ServerPort == 5055 || settings.ServerPort == 0))
-                {
-                    settings.ServerPort = 4530;
-                }
+			bool hidePort = false;
+			if (settings.Protocol == ConnectionProtocol.Udp && (settings.ServerPort == 4530 || settings.ServerPort == 0))
+			{
+				settings.ServerPort = 5055;
+			} else if (settings.Protocol == ConnectionProtocol.Tcp && (settings.ServerPort == 5055 || settings.ServerPort == 0))
+			{
+				settings.ServerPort = 4530;
+			}
                 #if RHTTP
                 if (settings.Protocol == ConnectionProtocol.RHttp)
                 {
@@ -181,18 +184,23 @@ public class ServerSettingsInspector : Editor
                     hidePort = true;
                 }
                 #endif
-                settings.ServerAddress = EditorGUILayout.TextField("Server Address", settings.ServerAddress);
-                settings.ServerAddress = settings.ServerAddress.Trim();
-                if (!hidePort)
-                {
-                    settings.ServerPort = EditorGUILayout.IntField("Server Port", settings.ServerPort);
-                }
+			settings.ServerAddress = EditorGUILayout.TextField ("Server Address", settings.ServerAddress);
+			settings.ServerAddress = settings.ServerAddress.Trim ();
+			if (!hidePort)
+			{
+				settings.ServerPort = EditorGUILayout.IntField ("Server Port", settings.ServerPort);
+			}
                 // protocol
-                valProtocol = settings.Protocol;
-                valProtocol = (ConnectionProtocol)EditorGUILayout.EnumPopup("Protocol", valProtocol);
-                settings.Protocol = (ConnectionProtocol)valProtocol;
+			valProtocol = settings.Protocol;
+			valProtocol = (ConnectionProtocol)EditorGUILayout.EnumPopup ("Protocol", valProtocol);
+			settings.Protocol = (ConnectionProtocol)valProtocol;
+
+		
                 #if UNITY_WEBGL
-                EditorGUILayout.HelpBox("WebGL always use Secure WebSockets as protocol.\nThis setting gets ignored in current export.", MessageType.Warning);
+				if (valProtocol != ConnectionProtocol.WebSocket && valProtocol != ConnectionProtocol.WebSocketSecure)
+				{
+				EditorGUILayout.HelpBox("WebGL must use WebSockets as protocol. Please select WebSocket or WebSocket Secure Protocole.", MessageType.Warning);
+				}
                 #endif
 
                 // appid

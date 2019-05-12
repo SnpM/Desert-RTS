@@ -4,7 +4,7 @@
 // <copyright company="Exit Games GmbH">Photon Chat Api - Copyright (C) 2014 Exit Games GmbH</copyright>
 // ----------------------------------------------------------------------------------------------------------------------
 
-namespace ExitGames.Client.Photon.Chat
+namespace Photon.Chat
 {
     /// <summary>
     /// Wraps up codes for operations used internally in Photon Chat. You don't have to use them directly usually.

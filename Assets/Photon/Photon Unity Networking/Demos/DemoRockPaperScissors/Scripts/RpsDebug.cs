@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
+#pragma warning disable 649
+
 public class RpsDebug : MonoBehaviour {
 
     [SerializeField]

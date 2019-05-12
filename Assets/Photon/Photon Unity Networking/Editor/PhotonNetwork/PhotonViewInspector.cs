@@ -12,13 +12,14 @@
 #define UNITY_MIN_5_3
 #endif
 
+#pragma warning disable 618 
 
 using System;
 using UnityEditor;
 using UnityEngine;
 
 using Photon.Pun;
-
+using ExitGames.Client.Photon;
 
 [CustomEditor(typeof (PhotonView))]
 public class PhotonViewInspector : Editor
@@ -28,7 +29,7 @@ public class PhotonViewInspector : Editor
     public override void OnInspectorGUI()
     {
         this.m_Target = (PhotonView)target;
-        bool isProjectPrefab = EditorUtility.IsPersistent(this.m_Target.gameObject);
+		bool isProjectPrefab = PhotonEditorUtils.IsPrefab(this.m_Target.gameObject);
 
         if (this.m_Target.ObservedComponents == null)
         {

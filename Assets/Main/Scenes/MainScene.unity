@@ -324,7 +324,6 @@ GameObject:
   - component: {fileID: 1138005070}
   - component: {fileID: 1138005069}
   - component: {fileID: 1138005082}
-  - component: {fileID: 1138005081}
   - component: {fileID: 1138005080}
   m_Layer: 0
   m_Name: Manager
@@ -571,18 +570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IP: 127.0.0.1
   RoomSize: 1
---- !u!114 &1138005081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1138005068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a824029e67cecf4db25bc6b0bee99bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
 --- !u!114 &1138005082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,3 +872,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb619257740a9e4b9f971384ad63d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeed: 8
+  ZoomSpeed: 4

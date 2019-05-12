@@ -1,4 +1,4 @@
-﻿using ExitGames.Client.Photon.Chat;
+﻿using Photon.Chat;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;

@@ -4,34 +4,34 @@
 // <copyright company="Exit Games GmbH">Photon Chat Api - Copyright (C) 2014 Exit Games GmbH</copyright>
 // ----------------------------------------------------------------------------------------------------------------------
 
-namespace ExitGames.Client.Photon.Chat
+namespace Photon.Chat
 {
-    /// <summary>Possible states for a LoadBalancingClient.</summary>
+    /// <summary>Possible states for a Chat Client.</summary>
     public enum ChatState
     {
         /// <summary>Peer is created but not used yet.</summary>
         Uninitialized,
-        /// <summary>Connecting to master (includes connect, authenticate and joining the lobby)</summary>
+        /// <summary>Connecting to name server.</summary>
         ConnectingToNameServer,
-        /// <summary>Connected to master server.</summary>
+        /// <summary>Connected to name server.</summary>
         ConnectedToNameServer,
-        /// <summary>Usually when Authenticated, the client will join a game or the lobby (if AutoJoinLobby is true).</summary>
+        /// <summary>Authenticating on current server.</summary>
         Authenticating,
-        /// <summary>Usually when Authenticated, the client will join a game or the lobby (if AutoJoinLobby is true).</summary>
+        /// <summary>Finished authentication on current server.</summary>
         Authenticated,
-        /// <summary>Transition from master to game server.</summary>
+        /// <summary>Disconnecting from name server. This is usually a transition from name server to frontend server.</summary>
         DisconnectingFromNameServer,
-        /// <summary>Transition to gameserver (client will authenticate and join/create game).</summary>
+        /// <summary>Connecting to frontend server.</summary>
         ConnectingToFrontEnd,
-        /// <summary>Connected to gameserver (going to auth and join game).</summary>
+        /// <summary>Connected to frontend server.</summary>
         ConnectedToFrontEnd,
-        /// <summary>Transition from gameserver to master (after leaving a room/game).</summary>
+        /// <summary>Disconnecting from frontend server.</summary>
         DisconnectingFromFrontEnd,
         /// <summary>Currently not used.</summary>
         QueuedComingFromFrontEnd,
         /// <summary>The client disconnects (from any server).</summary>
         Disconnecting,
-        /// <summary>The client is no longer connected (to any server). Connect to master to go on.</summary>
+        /// <summary>The client is no longer connected (to any server).</summary>
         Disconnected,
     }
 }

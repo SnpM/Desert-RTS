@@ -79,9 +79,6 @@ public class GUIFriendFinding : MonoBehaviour
         {
 				PhotonNetwork.CreateRoom(null); // just a random room
         }
-
-		ExpectedUsers = GUILayout.TextField("Expected Users",ExpectedUsers);
-
         GUILayout.EndHorizontal();
 
 

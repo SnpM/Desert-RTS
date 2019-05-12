@@ -10,6 +10,7 @@ using UnityEngine;
 using System.Collections;
 using Debug = UnityEngine.Debug;
 using UnityEditor.SceneManagement;
+using ExitGames.Client.Photon;
 
 [InitializeOnLoad]
 public class PhotonViewHandler : EditorWindow
@@ -20,7 +21,7 @@ public class PhotonViewHandler : EditorWindow
     {
         // hierarchyWindowChanged is called on hierarchy changed and on save. It's even called when hierarchy-window is closed and if a prefab with instances is changed.
         // this is not called when you edit a instance's value but: on save
-		#if UNITY_2018
+		#if (UNITY_2018 || UNITY_2018_1_OR_NEWER)
 		EditorApplication.hierarchyChanged += HierarchyChange;
 		#else
 		EditorApplication.hierarchyWindowChanged += HierarchyChange;
@@ -66,11 +67,13 @@ public class PhotonViewHandler : EditorWindow
         foreach (PhotonView view in pvObjects)
         {
             // first pass: fix prefabs to viewID 0 if they got a view number assigned (cause they should not have one!)
-            if (EditorUtility.IsPersistent(view.gameObject))
+			if (PhotonEditorUtils.IsPrefab(view.gameObject))
             {
                 if (view.viewID != 0 || view.prefixBackup != -1 || view.instantiationId != -1)
                 {
-                    Debug.LogWarning("PhotonView on persistent object being fixed (id and prefix must be 0). Was: " + view);
+					#if !UNITY_2018_3_OR_NEWER
+                    	Debug.LogWarning("PhotonView on persistent object being fixed (id and prefix must be 0). Was: " + view);
+					#endif
                     view.viewID = 0;
                     view.prefixBackup = -1;
                     view.instantiationId = -1;

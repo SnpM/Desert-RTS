@@ -17,6 +17,11 @@ using SupportClassPun = ExitGames.Client.Photon.SupportClass;
 using UnityEngine.Profiling;
 #endif
 
+
+#if UNITY_WEBGL
+#pragma warning disable 0649
+#endif
+
 /// <summary>
 /// Internal Monobehaviour that allows Photon to run an Update loop.
 /// </summary>
@@ -31,7 +36,7 @@ internal class PhotonHandler : MonoBehaviour
     private int nextSendTickCount = 0;
 
     private int nextSendTickCountOnSerialize = 0;
-
+	
     private static bool sendThreadShouldRun;
 
     private static Stopwatch timerToStopConnectionInBackground;
@@ -64,7 +69,8 @@ internal class PhotonHandler : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += (scene, loadingMode) =>
         {
             PhotonNetwork.networkingPeer.NewSceneLoaded();
-            PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName);
+            PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName, false);
+			PhotonNetwork.networkingPeer.IsReloadingLevel = false;
         };
     }
 
@@ -74,7 +80,9 @@ internal class PhotonHandler : MonoBehaviour
     protected void OnLevelWasLoaded(int level)
     {
         PhotonNetwork.networkingPeer.NewSceneLoaded();
-        PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName);
+        PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName, false);
+		PhotonNetwork.networkingPeer.IsReloadingLevel = false;
+		PhotonNetwork.networkingPeer.AsynchLevelLoadCall = false;
     }
 
     #endif
@@ -185,7 +193,7 @@ internal class PhotonHandler : MonoBehaviour
 
     protected void OnCreatedRoom()
     {
-        PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName);
+        PhotonNetwork.networkingPeer.SetLevelInPropsIfSynced(SceneManagerHelper.ActiveSceneName, false);
     }
 
     public static void StartFallbackSendAckThread()

@@ -51,7 +51,7 @@ public enum OwnershipOption
 /// PUN's NetworkView replacement class for networking. Use it like a NetworkView.
 /// </summary>
 /// \ingroup publicApi
-[AddComponentMenu("Photon Networking/Photon View &v")]
+[AddComponentMenu("Photon Networking/Photon View")]
 public class PhotonView : Photon.MonoBehaviour
 {
     #if UNITY_EDITOR
