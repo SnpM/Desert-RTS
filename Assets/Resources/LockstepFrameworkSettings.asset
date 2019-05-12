@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b9061c066fc4e08843d5798ea17007, type: 3}
   m_Name: LockstepFrameworkSettings
   m_EditorClassIdentifier: 
-  _database: {fileID: 11400000, guid: ecd648e21160842b494656908a869b17, type: 2}
+  _database: {fileID: 11400000, guid: 3d9bb01eb2c440842971909fac8868c6, type: 2}
